@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+  {% block content %}
+    <div class="container mt-5">
+      <h1 class="mb-3">Welcome to The Morse Code Kingdom</h1>
+      <h2 class="mb-3">Choose Desired Mode:</h2>
+      <a class="btn btn-outline-success" href="{{ url_for('cipher', mode='encrypt') }}">Encryption</a>
+      <a class="btn btn-outline-success" href="{{ url_for('cipher', mode='decrypt') }}">Decryption</a>
+    </div>
+  {% endblock %}
